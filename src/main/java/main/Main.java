@@ -3,17 +3,12 @@ package main;
 import expense.ExpensesService;
 
 public class Main {
-    public static ExpensesService expensesService = new ExpensesService();
-
-    public static void main(String[] args) {
 
         //TODO
-        // add categories and filter by those categories
-        // add budget feature
+        // -add categories and filter by those categories
+        // -add budget feature
 
-        // <test-command>
-        // expense-tracker add --description "Burger" --amount 10
-
-        expensesService.executeTracker();
+    public static void main(String[] args) {
+        ExpensesService.executeTracker();
     }
 }

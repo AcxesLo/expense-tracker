@@ -5,10 +5,10 @@ import csv.CSVWriter;
 import java.util.Scanner;
 
 public class ExpensesService {
-    private final ExpensesLogic expensesLogic = new ExpensesLogic();
-    private final CSVWriter csvWriter = new CSVWriter();
+    private static final ExpensesLogic expensesLogic = new ExpensesLogic();
+    private static final CSVWriter csvWriter = new CSVWriter();
 
-    public void executeTracker() {
+    public static void executeTracker() {
         while (true) {
             System.out.print(">");
 
